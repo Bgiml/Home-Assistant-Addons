@@ -228,21 +228,6 @@ def generate_html_listcloud():
     html_content += f"""
         <h2>{user} 您的剩余空间还有: {space}</h2>
     """
-    html_content += f"""
-        <style>
-            a {{
-                text-decoration: none;
-                color: #808080;  /* 设置超链接的颜色，可以根据需要修改 */
-            }}
-        </style>
-        <marquee behavior="alternate" direction="left" scrollamount="5">
-            <a href="https://sumju.net/?p=7943" target="_blank">【官方硬件优惠卷，最高可省60元～】</a>
-            <a href="https://sumju.net/?p=8022" target="_blank">【大陆地区优化版本HassOS】</a>
-            <a href="http://qm.qq.com/cgi-bin/qm/qr?_wv=1027&k=NDQnzpDKRzaB7EMzQdPuU1yQPTN248-P&authKey=cjGRmNWaFSrUh%2B6yTOD0OtmmmzaJz93%2BRAC%2BQK6yBROTbYZ6PsLSJUOgIlt%2B41BK&noverify=0&group_code=248505081" target="_blank">【加QQ交流群】</a>
-            <a href="https://sumju.net/" target="_blank">【插件作者博客】</a>
-            <a href="https://space.bilibili.com/441936678" target="_blank">【B站频道首页】</a>
-        </marquee>
-    """
     html_content += """
         <table>
             <thead>
@@ -737,6 +722,7 @@ def create_threa_afterlogin():
     schedule.every().day.at(backup_time).do(simulate_backup)
 
 def filter_and_print_date(records, key_name, num_to_keep):
+    to_print = []
     sorted_records = sorted(records, key=itemgetter('date'), reverse=True)
     if len(sorted_records) > num_to_keep:
         to_print = sorted_records[num_to_keep:]
