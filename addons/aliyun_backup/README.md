@@ -1,4 +1,4 @@
-# Home Assistant Add-on: Aliyun Drive Backup
+# Home Assistant Add-on: Aliyun Drive Backup (Fix bug)
 
 
 ![Supports aarch64 Architecture][aarch64-shield]
@@ -28,17 +28,3 @@
 5. 完成并等待定时备份到阿里云盘
    ![Aliyun Image](https://github.com/5high/Home-Assistant-Addons/blob/main/addons/images/aliyun.png?raw=true)
 
-## 本插件登录后无需干预自动执行每日签到
-
-## Home Assistant Green 优惠卷地址
-
-[Home Assistant Green 40 元优惠卷](https://sumju.net/?p=7943)  
-[SkyConnect 20 元优惠卷](https://sumju.net/?p=7943)  
-
-##
-
-更多教程 :https://sumju.net  
-电报 群 :https://t.me/joinchat/J26zVFGMhWWB1sBTFvcjaA  
-电报频道 :https://t.me/itcommander  
-Twitter :https://twitter.com/itcommander2  
-Facebook :https://www.facebook.com/itcommander.itcommander.1  
